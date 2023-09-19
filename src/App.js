@@ -2,9 +2,9 @@ import React, { lazy, Suspense } from 'react'
 // import Navbar from './Components/Navbar'
 import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Spinner from './Spinner/Spinner'
+import loading from './Spinner/loadingball.gif'
 
-const LazyComp = lazy(() => import('./Routing/Routing'))
+const Routing = lazy(() => import('./Routing/Routing'))
 
 
 
@@ -13,8 +13,10 @@ const App = () => {
     <>
       <Router>
         {/* <Navbar /> */}
-        <Suspense fallback={<Spinner />}>
-          <LazyComp />
+        <Suspense fallback={<div style={{ textAlign: 'center' }}>
+          <img src={loading} alt="loading" />
+        </div>}>
+          <Routing />
         </Suspense>
 
       </Router>
