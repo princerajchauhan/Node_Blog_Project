@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import './Footer.css'
+import Data from "../Data";
 
 const Footer = () => {
+    const context = useContext(Data)
     return (
         <>
-            <div className="footerMain">
+            {context && <> <div className="footerMain">
                 <button onClick={() => window.scrollTo(0, 0)}>
                     <i className="fa-solid fa-arrow-up"></i> Back To Top
                 </button>
@@ -45,7 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <h2 className="ready">Get Ready to Enjoy on the Blog-Machine !!!</h2>
-            </div>
+            </div> </>}
         </>
     )
 }
