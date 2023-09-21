@@ -1,12 +1,22 @@
+import React, { lazy, Suspense } from 'react'
+// import Navbar from './Components/Navbar'
 import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Routing from './Routing/Routing'
+import Spinner from './Spinner/Spinner'
+
+const Routing = lazy(() => import('./Routing/Routing'))
+
+
 
 const App = () => {
   return (
     <>
       <Router>
-        <Routing />
+        {/* <Navbar /> */}
+        <Suspense fallback={<Spinner />}>
+          <Routing />
+        </Suspense>
+      
       </Router>
     </>
   )
