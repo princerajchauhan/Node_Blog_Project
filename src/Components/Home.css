@@ -596,20 +596,4 @@
         gap: 10px;
     }
     
-@keyframes moveAdv {
-    0% {
-        width: 0%;
-        color: purple;
-    }
-    30%{
-        color: blue;
-    }
-    60%{
-        color: red;
-    }
-    70% {
-        width: 100%;
-        color: teal;
-    }
-}
 }
