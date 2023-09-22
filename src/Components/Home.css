@@ -316,14 +316,20 @@
     filter: drop-shadow(0 0 2px black);
 }
 
-.advertisement>p {
+.advParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advParent>p {
     font-size: 30px;
     position: relative;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.advertisement>p::before {
+.advParent>p::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -347,7 +353,7 @@
         color: red;
     }
     70% {
-        width: 45%;
+        width: 100%;
         color: teal;
     }
 }
@@ -450,8 +456,13 @@
         margin: 50px 0;
     }
 
-    .leftStories {
+    .leftDiv{
         width: 90%;
+        margin: auto;
+    }
+
+    .leftStories {
+        width: 100%;
         margin: auto;
     }
 

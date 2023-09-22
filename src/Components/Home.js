@@ -109,7 +109,9 @@ const Home = () => {
 
                             {/* ************** ADVERTISEMENT ******************* */}
                             <div className="advertisement">
-                                <p data-text="Advertisement">Advertisement</p>
+                                <div className='advParent'>
+                                    <p data-text="Advertisement...">Advertisement...</p>
+                                </div>
                                 {
                                     advert.sort(() => Math.random() - Math.random()).slice(0, 3).map((element, index) => {
                                         return (
