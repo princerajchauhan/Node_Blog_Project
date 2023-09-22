@@ -168,12 +168,12 @@
     .nav-menu-footer, .resources ul {
         margin-top: 5px;
     }
+    .ready{
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-    .ready{
-        margin-top: 20px;
-    }
     .logoSide{
         margin-left: 0px;
     }
@@ -200,6 +200,7 @@
         width: 90%;
         margin-top: 0;
         margin-bottom: 40px;
+        font-size: 22px;
     }
     .nav-item-footer, .resources ul li{
         margin-bottom: 1px;

@@ -8,7 +8,6 @@ import TopPost from './TopPost'
 import Navbar from './Navbar'
 import Adv from '../Advertisement'
 
-
 const Home = () => {
     useEffect(() => {
         document.title = `Blog Machine`
