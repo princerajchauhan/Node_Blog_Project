@@ -7,7 +7,7 @@ import Navbar from './Navbar'
 import Adv from '../Advertisement'
 
 const Hollywood = () => {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 
     const context = useContext(Data)
     const advert = useContext(Adv)
@@ -63,7 +63,9 @@ const Hollywood = () => {
 
                         {/* ************** ADVERTISEMENT ******************* */}
                         <div className="advertisement">
-                            <p data-text="Advertisement">Advertisement</p>
+                            <div className='advParent'>
+                                <p data-text="Advertisement...">Advertisement...</p>
+                            </div>
                             {
                                 advert.sort(() => Math.random() - Math.random()).slice(0, 3).map((element, index) => {
                                     return (

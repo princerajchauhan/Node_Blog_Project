@@ -8,7 +8,7 @@ import Adv from '../Advertisement'
 
 const Technology = () => {
 
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 
     const context = useContext(Data)
     const advert = useContext(Adv)
@@ -64,7 +64,9 @@ const Technology = () => {
 
                         {/* ************** ADVERTISEMENT ******************* */}
                         <div className="advertisement">
-                            <p data-text="Advertisement">Advertisement</p>
+                            <div className='advParent'>
+                                <p data-text="Advertisement...">Advertisement...</p>
+                            </div>
                             {
                                 advert.sort(() => Math.random() - Math.random()).filter(item => item.category === 'TechAdv').slice(0, 3).map((element, index) => {
                                     return (

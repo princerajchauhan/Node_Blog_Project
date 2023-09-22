@@ -456,14 +456,13 @@
         margin: 50px 0;
     }
 
-    .leftDiv{
-        width: 90%;
-        margin: auto;
-    }
-
     .leftStories {
         width: 100%;
         margin: auto;
+    }
+
+    .advertisement{
+        width: 100%;
     }
 
     .leftImage>img {

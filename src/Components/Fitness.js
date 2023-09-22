@@ -7,7 +7,7 @@ import Navbar from './Navbar'
 import Adv from '../Advertisement'
 
 const Fitness = () => {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 
     const context = useContext(Data)
     const advert = useContext(Adv)
@@ -63,12 +63,14 @@ const Fitness = () => {
 
                         {/* ************** ADVERTISEMENT ******************* */}
                         <div className="advertisement">
-                            <p data-text="Advertisement">Advertisement</p>
+                            <div className='advParent'>
+                                <p data-text="Advertisement...">Advertisement...</p>
+                            </div>
                             {
                                 advert.sort(() => Math.random() - Math.random()).filter(item => item.category === 'FitAdv').slice(0, 3).map((element, index) => {
                                     return (
                                         <div className="adv" key={index}>
-                                            <img src={element.img_url} alt='Not found'/>
+                                            <img src={element.img_url} alt='Not found' />
                                         </div>
                                     )
                                 })
