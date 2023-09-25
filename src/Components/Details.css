@@ -133,11 +133,11 @@
     transition: all 0.5s linear;
     position: fixed;
     right: 25px;
-    bottom: 25px;
+    bottom: 65px;
 }
 
 .goBackBtn:hover {
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 
@@ -201,6 +201,9 @@
 
     .detailcontent p {
         font-size: 22px;
+    }
+    .goBackBtn {
+        bottom: 25px;
     }
 }
 
